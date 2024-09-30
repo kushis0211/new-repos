@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Shop</title>
+    <link rel="stylesheet"  href="choco.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <p class="logo">
+                Chocolates
+            </p>
+            <div class="dropdown">
+                <button class="dropbtn">SORT</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="sortItems('asc')">Price Low to High</a>
+                    <a href="#" onclick="sortItems('desc')">Price High to Low</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">BRAND</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="filterByCategory('all')">All</a>
+                    <a href="#" onclick="filterByCategory('DairyMilk')">Dairy Milk</a>
+                </div>
+            </div>
+            <div>
+                <input type="text" id="searchInput" placeholder="Search Chocolates">
+                <button onclick="searchItems()" class="search">Search</button>
+                <button onclick="resetDisplay()" class="search">Clear</button>
+            </div>
+            <div class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <p id="count">0</p>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
